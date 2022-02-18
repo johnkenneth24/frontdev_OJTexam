@@ -77,19 +77,18 @@ i {
 
 }
 
-.partner {
-    position: relative;
+.partner { 
     height: 100vh;
 }
 
-.partner .partner-heading .h1-partner {
+.partner-heading .h1-partner {
     margin-top: 40px;
     font-size: 2rem;
     overflow: hidden;
     text-align: center;
 }
 
-.partner .partner-heading .h1-partner:before,
+.partner-heading .h1-partner:before,
 .h1-partner:after {
     background-color: #aaaaaa;
     content: "";
@@ -100,12 +99,12 @@ i {
     width: 30%;
 }
 
-.partner .partner-heading .h1-partner:before {
+.partner-heading .h1-partner:before {
     right: 0.5em;
     margin-left: -50%;
 }
 
-.partner .partner-heading .h1-partner:after {
+.partner-heading .h1-partner:after {
     left: 0.5em;
     margin-right: -50%;
 }
@@ -150,8 +149,7 @@ i {
 }
 
 .mission{
-    height: 99vh;
-    position: relative;
+    height: 99vh; 
 }
 
 .mission-header{
@@ -172,6 +170,7 @@ i {
     position: relative;
     height: 100vh;
     background-color: rgb(211, 226, 240); 
+    border-bottom: solid 3px #001988;
 }
 
 .job-header{
@@ -197,6 +196,7 @@ i {
     width: 400px;
     height: 150px;
     background-color: #fff;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -221,4 +221,32 @@ i {
 .job .job-description .job-place{
     color: rgb(147, 160, 28);
     font-weight: 500;
+}
+
+.about-us{
+    height: 79vh;
+}
+
+.why-eesi .rest-foot{  
+    margin: 20px 0px 20px 0px;
+    max-width: 10%;
+    height: auto;
+}
+
+.why-eesi .about-eesi{ 
+    margin: 20px 0px 20px 0px;
+    width: 700px;
+    font-size: 1.3rem;
+}
+
+.why-eesi .ceo{
+    color: #949494;
+}
+
+.about-us .circle{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(147, 160, 28);
 }
