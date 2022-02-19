@@ -1,3 +1,4 @@
+/* home */
 *{
     padding: 0;
     margin: 0;
@@ -26,14 +27,37 @@ i {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+#people{
+    background-color: rgb(147, 160, 28);
+    color: #fff;
+    border-radius: 10px;
+    transition: 1sec;
+}
+
+#people:hover{
+    border: solid 2px #93A01C;
+    background-color: #fff;
+    color: #93A01C !important;
+    border-radius: 10px;
+}
+
 .navbar .logo img {
     width: 255px;
     height: 80px;
 }
 
 .navbar ul li a {
+    margin-left: 10px;
     font-weight: 500;
     font-size: 1.3em;
+    border-radius: 10px;
+    transition: 1sec;
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(147, 160, 28);
+    color: #fff !important;
+    border-radius: 10px;
 }
 
 .home {
@@ -44,18 +68,11 @@ i {
     height: 80vh; 
 }
 
-.home .home-text1 {
+.home .home-text1, .home-text2 {
     background-color: rgb(16, 99, 107, 0.5);
     transform: skew(-10deg);
     margin-bottom: 5px;
     ;
-}
-
-.home .home-text2 {
-    background-color: rgb(96, 114, 126, 0.5);
-    transform: skew(-10deg);
-    width: 100vh;
-    margin-bottom: 10px;
 }
 
 .home h3 {
@@ -77,12 +94,15 @@ i {
 
 }
 
-.partner { 
+/* partner */
+
+.partner .col-md-3{ 
     height: 100vh;
 }
 
-.partner-heading .h1-partner {
-    margin-top: 40px;
+
+
+.partner-heading .h1-partner { 
     font-size: 2rem;
     overflow: hidden;
     text-align: center;
@@ -197,6 +217,11 @@ i {
     height: 150px;
     background-color: #fff;
     border-radius: 15px;
+    transition: 1sec;
+    color: #000;
+}
+
+.job .job-box:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -234,8 +259,7 @@ i {
 }
 
 .why-eesi .about-eesi{ 
-    margin: 20px 0px 20px 0px;
-    width: 700px;
+    margin: 20px 0px 20px 0px; 
     font-size: 1.3rem;
 }
 
@@ -281,3 +305,63 @@ i {
     background-color: #000;
     color: #fff;
 }
+
+
+/* media screen */
+
+@media only screen and (max-width: 768px) {
+    [class*="col-md-12"] {
+      width: 100%;
+    }
+
+    .partner .partner-div p {
+        font-size: 1.2rem;
+    }
+
+    .job .job-box{
+        width: 240px;
+    }
+
+    .job .job-icon{ 
+        width: 60px;
+        height: 60px; 
+    }
+
+    .job .job-description .job-title{
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .job .job-description .job-place{ 
+        font-weight: none;
+    }
+     
+    .footer p{
+        font-size: 1rem;
+    }
+
+    .about-us{
+        height: 80vh;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .navbar .logo img {
+        width: 155px;
+        height: 50px;
+    }
+
+    .home h3{
+        font-size: 2rem; 
+    }
+
+    .partner .col-md-3{
+        height: 50vh;
+    }
+
+    .partner-heading .h1-partner{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+  }
