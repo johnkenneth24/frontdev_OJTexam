@@ -4,29 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-.row .top-contact {
-    background-color: #10636B;
-    height: 25px;
-    width: 100%;
-    padding: 0px 30px 0px 30px;
-}
-
-.row .top-contact p,
-i {
-    color: #fff;
-    font-size: 14px;
-    margin: 0px;
-}
-
-.row .top-contact .fa-brands {
-    margin-right: 5px;
-    font-size: 15px;
-}
 
 .navbar {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+ 
 #people{
     background-color: rgb(147, 160, 28);
     color: #fff;
@@ -65,7 +48,7 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh; 
+    height: 85vh; 
 }
 
 .home .home-text1, .home-text2 {
@@ -97,7 +80,7 @@ i {
 /* partner */
 
 .partner .col-md-3{ 
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -158,9 +141,7 @@ i {
     margin-bottom: 15px;
 }
 
-.partner .partner-div {
-    position: relative;
-    top: 150px;
+.partner .partner-div { 
     margin-bottom: 20px;
 }
 
@@ -186,8 +167,7 @@ i {
 }
 
 
-.job{
-    position: relative;
+.job{ 
     height: 100vh;
     background-color: rgb(211, 226, 240); 
     border-bottom: solid 3px #001988;
@@ -201,11 +181,10 @@ i {
 }
 
 
-.col-md-4{
+.job .col-md-4{
     height: 40vh; 
     margin: 0px 0px 0px 0px; 
-    padding: 0px 0px 0px 0px;
-    position: relative;
+    padding: 0px 0px 0px 0px; 
 }
 
 .job .col-md-12{
@@ -249,7 +228,7 @@ i {
 }
 
 .about-us{
-    height: 65vh;
+    height: 73vh;
 }
 
 .why-eesi .rest-foot{  
@@ -279,13 +258,13 @@ i {
     background-color: rgb(41, 41, 41);
 }
 
-.footer .logo .pmap{
+.logo .pmap{
     max-width: 4%;
     height: auto;
     margin-left: 15px;
 }
 
-.footer .logo .cci{
+.logo .cci{
     max-width: 13%;
     height: auto;
 }
@@ -296,13 +275,27 @@ i {
 }
 
 .footer i{
-    font-size: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
     margin-left: 15px;
 }
 
 .copyright{
     height: 5vh;
     background-color: #000;
+    color: #fff;
+}
+
+
+.contact p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.contact i {
+    margin-right: 5px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -343,20 +336,22 @@ i {
     .about-us{
         height: 80vh;
     }
+
+
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 767px) {
     .navbar .logo img {
         width: 155px;
         height: 50px;
     }
 
     .home h3{
-        font-size: 2rem; 
+        font-size: 1.9rem; 
     }
 
     .partner .col-md-3{
-        height: 50vh;
+        height: 40vh;
     }
 
     .partner-heading .h1-partner{
@@ -364,4 +359,103 @@ i {
         margin-top: 10px;
     }
 
+    .mission{
+        height: 100vh;
+    }
+
+    .job{
+        height: 140vh;
+    }
+
+    .job .col-md-4{
+        height: 20vh;
+    }
+
+    .job .job-box{
+        height: 100px;
+        width: 300px;
+    }
+
+    .footer p{
+        font-size: 0.8rem;
+    }
+
+    .footer i{
+        font-size: 1rem;
+    }
+
+    .why-eesi .about-eesi{
+        font-size: 1rem;
+    }
+
+    .copyright p{
+        font-size: 0.7rem;
+    }
+
+    .footer .logo .pmap{
+        max-width: 6%;
+        height: auto;
+        margin-left: 15px;
+    }
+    
+    .footer .logo .cci{
+        max-width: 20%;
+        height: auto;
+    }
+
+    .navbar{
+        padding: 0px;
+    }
+
+    .navbar .container-fluid{
+        padding: 0px 5px 0px 5px;
+    }
+
   }
+
+  @media only screen and (max-width: 356px){
+      .home h3{
+        font-size: 1.5rem;
+      }
+
+      .row .top-contact p, i{
+        font-size: 12px; 
+      }
+
+      .partner-heading .h1-partner{
+          font-size: 1rem;
+      }
+
+      .mission-header{
+          font-size: 2rem;
+      }
+
+      .mission{
+          height: 105vh;
+      }
+
+      .about-us{
+          height: 90vh;
+      }
+
+      .why-eesi .ceo{
+          font-size: 11px;
+      }
+
+      .contact p {
+        color: #fff;
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .contact i {
+        margin-right: 5px;
+        font-size: 10px;
+        color: #fff;
+    }
+
+     .followhead p{
+        display: none;
+    }
+  }
+
